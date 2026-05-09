@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100;
+  }
+}
+
+@layer components {
+  .macos-card {
+    @apply rounded-xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-700 dark:bg-neutral-800;
+  }
+
+  .macos-btn {
+    @apply inline-flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-700 shadow-sm transition-colors hover:bg-neutral-50 dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600;
+  }
+
+  .macos-btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-700;
+  }
+
+  .segmented-control {
+    @apply inline-flex rounded-lg border border-neutral-200 bg-neutral-100 p-0.5 dark:border-neutral-600 dark:bg-neutral-700;
+  }
+
+  .segmented-control-item {
+    @apply rounded-md px-3 py-1.5 text-xs font-medium text-neutral-600 transition-colors dark:text-neutral-300;
+  }
+
+  .segmented-control-item.active {
+    @apply bg-white text-neutral-900 shadow-sm dark:bg-neutral-600 dark:text-neutral-100;
+  }
+}
