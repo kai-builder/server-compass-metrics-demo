@@ -29,7 +29,7 @@ export default function PerformancePage() {
       <div className="macos-card p-4">
         <div className="flex items-center gap-2">
           <Zap className="w-4 h-4 text-neutral-500 dark:text-neutral-400" />
-          <h2 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">Performance Metrics</h2>
+          <h2 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">Performance Metrics Changes</h2>
         </div>
         <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
           CPU, memory, disk I/O, and container-level resource usage.
